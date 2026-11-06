@@ -1,0 +1,29 @@
+import type { Metadata } from "next";
+import DirectorsBoard from "@/components/about/DirectorsBoard";
+
+export const metadata: Metadata = {
+  title: "About Us | TARKA Design Studio",
+  description: "Get to know TARKA, our vision and the people behind it.",
+};
+
+export default function AboutPage() {
+  return (
+    <main className="about-page">
+      <section className="about-hero">
+        <p className="about-eyebrow">TARKA DESIGN STUDIO / ABOUT US</p>
+
+        <h1>
+          We turn thoughts
+          <br />
+          into <span>something real.</span>
+        </h1>
+
+        <p className="about-intro">
+          A creative studio where ideas meet design, technology and imagination.
+        </p>
+      </section>
+
+      <DirectorsBoard />
+    </main>
+  );
+}
